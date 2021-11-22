@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+/*
+    a b c d e f g h o j k l m n o p q r s t u v w x y z
+    color convertor: https://www.w3schools.com/colors/colors_converter.asp
+*/
+
+body {
+    /*background-color: #DFD9E2;*/
+    background-color: hsl(280, 13%, 87%);
+    /*color: #535865;*/
+    color: 	hsl(223, 10%, 36%);
+
+    /* first choice: Poppins, fallback: sans-serif */
+    font-family: 'Poppins', Arial, sans-serif;
+    font-weight: 300;
+}
+
+button {
+    /*background-color: #865B9A;*/
+    background-color: hsl(281, 26%, 48%);
+    /*color: #FFF;*/
+    color: hsl(0, 0%, 100%);
+    font-size: 24px;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+button:hover {
+    /*color: #865B9A;*/
+    color: hsl(281, 26%, 48%);
+    /*background-color: #FFF;*/
+    background-color: hsl(0, 0%, 100%);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    font-weight: 500;
+}
+
+ul {
+  list-style: square;
+}
+
+.contrast {
+    /*color: #865B9A;*/
+    color: hsl(281, 26%, 48%);
+}
+
+.uppercase {
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
+.underline {
+    text-decoration-line: underline;
+}
+
+#introduction {
+    font-weight: 500;
+}
+
+
