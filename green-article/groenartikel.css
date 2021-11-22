@@ -1,0 +1,85 @@
+/*
+    a b c d e f g h o j k l m n o p q r s t u v w x y z
+
+    Er is gebruik gemaakt van de volgende kleuren:
+    hsl(63, 56%, 10%) (donkergroen voor de randen).
+    hsl(63, 56%, 38%) (groen voor de header).
+    hsl(23, 100%, 65%) (oranje voor de cirkels).
+    hsl(74, 95%, 93%) (limoengroen voor de achtergrond).
+    De achtergrond-kleur voor de articles is een lichtere versie van de header-kleur.
+    Dit kun jij op basis van hsl-kleuren gemakkelijk zelf aanpassen!
+*/
+
+body {
+    background-color: hsl(74, 95%, 93%);
+    font-family: sans-serif;
+    /*margin: 0 1.5% 0 1.5%;*/
+}
+
+header {
+    background-color: hsl(63, 56%, 38%);
+    border: 3px dashed hsl(63, 56%, 10%);
+    color: #FFF;
+    height: 80px;
+    /*position: fixed;*/
+    position: sticky;
+    /*padding: 10px 0 25px 0;*/
+    padding: 16px;
+    text-align: center;
+    top: 0;
+    /*width: 97%;*/
+    z-index: 1;
+}
+
+/*h1 {*/
+/*    font-size: 25px;*/
+/*}*/
+
+/*h2 {*/
+/*    font-size: 18px;*/
+/*}*/
+
+main {
+    position: relative;
+    border: 3px double hsl(63, 56%, 10%);
+    /*margin-top: 16px;*/
+    /*width: 100%;*/
+    padding: 16px;
+}
+
+article {
+    background-color: hsl(63, 56%, 80%);
+    border: 2px solid hsl(63, 56%, 38%);
+    /*border-top-left-radius: 10px;*/
+    /*border-top-right-radius: 10px;*/
+    border-radius: 8px 8px 0 0;
+    /*margin: 4% 5% 4% 5%;*/
+    margin: 16px;
+    /*padding: 4% 5% 4% 5%;*/
+    padding: 16px;
+}
+
+#circle-one, #circle-two {
+    background-color: hsl(23, 100%, 65%);
+    border-radius: 50%;
+    display: inline-block;
+    height: 60px;
+    /*margin-right: 10px;*/
+    width: 60px;
+}
+
+#circle-one {
+    /*shadow: right bottom size color*/
+    /*box-shadow: 0 0 5px black;*/
+    box-shadow: 2px 2px 5px hsl(23, 100%, 30%);
+}
+
+#circle-two {
+    /*box-shadow: 2.5px 2.5px 2.5px black;*/
+    box-shadow: 5px 5px 2px hsl(0, 0%, 0%);
+}
+
+/*Zorg ervoor dat er ruimte tussen de twee cirkels ontstaat*/
+.circle-one + .circle-two {
+    margin-left: 20px;
+}
