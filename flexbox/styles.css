@@ -1,0 +1,41 @@
+div {
+
+}
+
+.flexbox-container {
+    display: flex;
+    border: 2px solid blueviolet;
+    margin-bottom: 2%;
+    height: 800px;
+}
+
+.flexbox-item {
+    height: 200px;
+    width: 200px;
+    margin: 2%;
+    border: 2px solid blueviolet;
+}
+
+.one {
+    background-color: lightpink;
+}
+.two {
+    background-color: lightblue;
+}
+.three {
+    background-color: lightseagreen;
+}
+
+#fb-1 { justify-content: flex-end; }
+#fb-2 { justify-content: center; }
+#fb-3 { justify-content: space-around; }
+#fb-4 { justify-content: space-between; }
+#fb-5 { align-items: flex-end; }
+#fb-6 { align-items: center; justify-content: center;}
+#fb-7 { align-items: flex-end; justify-content: space-around; }
+#fb-8 { flex-direction: row-reverse; }
+#fb-9 { flex-direction: column; }
+#fb-10 { flex-direction: row-reverse; justify-content: flex-end; }
+#fb-11 { flex-direction: column; justify-content: flex-end; }
+#fb-12 { flex-direction: column-reverse; justify-content: space-between; }
+#fb-13 { flex-direction: row-reverse; justify-content: center; align-items: flex-end; }
