@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form validation</title>
+    <!-- link stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Form Validation with JavaScript</h1>
+
+    <!-- registratieformulier -->
+    <form action="index.html">
+        <!-- titel formulier -->
+        <h2>Registreren</h2>
+
+        <!-- input veld gebruikersnaam met label -->
+        <label for="username">
+            Gebruikersnaam<br>
+            <input id="username" type="text" name="username" placeholder="Gebruikersnaam"/>
+            <!-- plek voor message -->
+            <span id="usernameMsg">Gebruikernaam mag geen @ bevatten</span>
+        </label>
+
+        <!-- input veld wachtwoord met label -->
+        <label for="password">
+            Wachtwoord<br>
+            <input id="password" type="password" name="password" placeholder="Wachtwoord" autocomplete="currentPassword">
+            <!-- plek voor message -->
+            <span id="passwordMsg">Wachtwoord te kort</span>
+        </label>
+
+        <input type="submit" name="" placeholder="Login">
+
+    </form>
+
+    <!-- link javascript file -->
+    <script src="main.js"></script>
+</body>
+</html>
