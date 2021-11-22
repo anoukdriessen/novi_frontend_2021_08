@@ -1,0 +1,58 @@
+:root {
+    --main-color: #D84282;
+    --bar-width: 50px;
+    --bar-height: 10px;
+    --container-width: 50px;
+}
+
+#menu {
+    height: var(--bar-height);
+    width: var(--bar-width);
+    background-color: var(--main-color);
+    position: relative;
+    transition: all 0.35s ease-in-out;
+}
+
+#menu::before, #menu::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: var(--bar-width);
+    height: var(--bar-height);
+    background-color: var(--main-color);
+    transition: all 0.35s ease-in-out;
+}
+
+#menu::before {
+    left: 0;
+    top: -15px;
+}
+
+#menu::after {
+    left: 0;
+    /*top: 15px;*/
+    bottom: -15px;
+}
+
+#container {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: var(--container-width);
+    /*padding: 20px 0 20px 0;*/
+    padding: 20px 0;
+}
+
+#container:hover #menu {
+    background-color: transparent;
+}
+
+#container:hover #menu::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+#container:hover #menu::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+}
