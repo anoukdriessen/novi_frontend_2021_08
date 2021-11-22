@@ -1,0 +1,57 @@
+:root {
+    --dark-bg: #000;
+    --white-txt: #fff;
+    --link: #ff1494;
+    --selection: #ssff2f;
+    --full-height: 100%;
+}
+
+html, body {
+    height: var(--full-height);
+}
+
+a {
+    color: var(--link);
+}
+
+a:hover {
+    color: var(--selection);
+    background-color: var(--selection);
+}
+
+.myArticle, address, blockquote {
+    padding: 2.5%;
+}
+
+blockquote {
+    text-align: justify;
+}
+
+section {
+    border-bottom: 10px solid mediumpurple;
+    padding: 1%;
+}
+
+button, input {
+    width: 200px;
+    padding: 1%;
+}
+
+
+#canvas-1 {
+    width: 200px;
+    height: 200px;
+    border: solid 2px lightpink;
+    background-color: lightblue;
+}
+
+table {
+    border: 5px solid rebeccapurple;
+    padding: 2%;
+}
+
+table td {
+    border: 1px solid deeppink;
+    margin: 5%;
+    font-size: 5vw;
+}

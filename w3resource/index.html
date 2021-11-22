@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>W3-Resource Exercises</title>
+</head>
+<body>
+
+    <section>
+        <h3>Links</h3>
+        <ul>
+            <li><a href="https://www.anoukdriessen.nl">Normal hyperlink</a></li>
+            <li><a href="https://www.anoukdriessen.nl/somefile.txt" download>Download keyword</a></li>
+            <li><a href="#someIDInFile">Link to part in File (with ID)</a></li>
+            <li><a href="https://www.anoukdriessen.nl" target="_blank">Open link in seperate browser tab</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Text</h3>
+        <ul>
+            <li>Een afkorting toelichten zoals <abbr title="HyperText Markup Language">HTML</abbr></li>
+            <li>Toon een adress op correcte manier:
+                <address>
+                    WickedLane 666,<br>
+                    Overijsel,<br>
+                    Nederland
+                </address>
+            </li>
+            <li>Dikgedrukte tekst is geschreven in b of strong tags <b>Bold</b> but <strong>Best Practice</strong></li>
+            <li>BlockQuote is een sectie die gequoted is van een andere source:
+                <blockquote>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus aperiam aut commodi consequatur corporis delectus deleniti dolor dolorum ducimus eligendi eos explicabo fuga, iure iusto labore libero minus modi natus nisi odio omnis perferendis placeat quae qui quibusdam recusandae rem repellat similique sint sit totam ullam veritatis voluptate. Deleniti harum libero pariatur quia tempora! Aliquid assumenda, culpa cum cupiditate deserunt dignissimos dolore earum error esse excepturi in ipsum iste maxime natus necessitatibus nostrum officiis provident quae quos, repudiandae suscipit tempora ut vel? Ab accusantium asperiores doloremque eveniet excepturi impedit iusto officia, placeat possimus quia quod ratione recusandae reprehenderit rerum totam!
+                </blockquote>
+            </li>
+            <li>Titel van werk kan beschreven worden met cite tag: <cite>The Scream</cite> by Edward Munch</li>
+            <li>Code tag:
+                <p>The HTML <code>button</code> tag defines a clickable button. <br>
+                The CSS <code>background-color</code> property defines the background color of an element.</p>
+            </li>
+            <li>Emphasized:
+                <p>We are learning HTML with  <em title="an online tutorial on web design and development.">w3resource HTML tutorial.</em></p>
+            </li>
+            <li>Samp, gebruik voor sample output van computer:
+                <p>This is an example of <samp>HTML samp tag.</samp></p>
+            </li>
+            <li>Keyboard input: <kbd>Ctrl</kbd> + <kbd>C</kbd></li>
+            <li>Variables: The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</li>
+            <li>Cross the line <del>Deleted text</del></li>
+            <li>Defining intance of term: <dfn>WHO</dfn> stands for World Health Organisation</p>  </li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Article</h3>
+        <article class="myArticle">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus culpa debitis delectus eos error eum
+                facilis harum incidunt, ipsam iure minus, odio odit officiis omnis pariatur perferendis quae quaerat
+                quia quidem quos recusandae repudiandae sed, tempora voluptate voluptatum? Accusantium alias illum neque
+                officia officiis quis ratione sapiente sed tempore, voluptas!</p>
+        </article>
+    </section>
+
+    <section>
+        <h3>Audio / Video</h3>
+        <ul>
+            <li>Add controls to Audio: controls keyword</li>
+        </ul>
+        <audio controls>
+            <source src="https://www.w3resource.com/html-css-exercise/basic/solution/beach.ogg" type="audio/ogg">
+            <source src="https://www.w3resource.com/html-css-exercise/basic/solution/beach.mp3" type="audio/mpeg">
+        </audio>
+        <br>
+        <embed type="video/mp4" src="https://www.w3resource.com/w3r_videos/pop.mp4">
+    </section>
+
+    <section>
+        <h3>Buttons</h3>
+        <ul>
+            <li><button type="button">Click Me!</button></li>
+            <li><button type="button" autofocus>Autofocus</button></li>
+            <li><button type="button" disabled>Disabled</button></li>
+            <li><button type="submit" form="#idFromSomeform" value="Submit">Submit specified Form</button></li>
+            <li><button type="submit" formtarget="_blank">Submit to a new window/tab</button></li>
+            <li><button name="topic" type="submit" value="someValue">Button with Value</button></li>
+            <li><button type="submit" value="Submit">Submit button</button></li>
+            <li><button type="reset" value="Reset">Reset button</button></li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Canvas</h3>
+        <p>Specificeer de canvas met CSS</p>
+        <canvas id="canvas-1"></canvas>
+    </section>
+
+    <section>
+        <h3>Tables</h3>
+        <table>
+            <caption>Caption of the Table, moet direct na table tag komen</caption>
+            <colgroup>
+                <col span="1" style="background-color: lightblue">
+                <col style="background-color: lightpink">
+                <col span="1" style="background-color: lightgreen">
+            </colgroup>
+            <tr>
+                <td>Titel kolom 1</td>
+                <td>Titel kolom 2</td>
+                <td>Titel kolom 3</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h3>Datalist i.c.m. pre-defined options input</h3>
+        <input list="Languages" id="Languages-choice" name="Languages-choice" />
+        <datalist id="Languages">
+            <option value="PHP"></option>
+            <option value="Java"></option>
+            <option value="HTML/CSS"></option>
+            <option value="Python"></option>
+            <option value="Other"></option>
+        </datalist>
+
+        <p>Description in Description list</p>
+        <dl>
+            <dt>PHP</dt>
+            <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, voluptatum.</dd>
+
+            <dt>Java</dt>
+            <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, quae!</dd>
+
+            <dt>HTML/CSS</dt>
+            <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, voluptatem?</dd>
+
+            <dt>Python</dt>
+            <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas, sequi.</dd>
+        </dl>
+
+        <h3>Other inputs</h3>
+        <label for="input_button">
+            Input Button
+            <input id="input_button" type="button"/><br>
+        </label>
+        <label for="input_checkbox">
+            Input Checkbox
+            <input id="input_checkbox" type="checkbox"/><br>
+        </label>
+        <label for="input_color">
+            Input Color
+            <input id="input_color" type="color"/><br>
+        </label>
+        <label for="input_date">
+            Input date
+            <input id="input_date" type="date"/><br>
+        </label>
+        <label for="input_datetime">
+            Input Datetime
+            <input id="input_datetime" type="datetime-local"/><br>
+        </label>
+        <label for="input_email">
+            Input Email
+            <input id="input_email" type="email"/><br>
+        </label>
+        <label for="input_file">
+            Input File
+            <input id="input_file" type="file"/><br>
+        </label>
+        <label for="input_hidden">
+            Input Hidden
+            <input id="input_hidden" type="hidden"/><br>
+        </label>
+        <label for="input_img">
+            Input Image
+            <input id="input_img" type="image"/><br>
+        </label>
+        <label for="input_month">
+            Input Month
+            <input id="input_month" type="month"/><br>
+        </label>
+        <label for="input_num">
+            Input Number
+            <input id="input_num" type="number"/><br>
+        </label>
+        <label for="input_pw">
+            Input Password
+            <input id="input_pw" type="password"/><br>
+        </label>
+        <label for="input_radio">
+            Input Radio
+            <input id="input_radio" type="radio"/><br>
+        </label>
+        <label for="input_range">
+            Input Range
+            <input id="input_range" type="range"/><br>
+        </label>
+        <label for="input_reset">
+            Input Reset
+            <input id="input_reset" type="reset"/><br>
+        </label>
+        <label for="input_search">
+            Input Search
+            <input id="input_search" type="search"/><br>
+        </label>
+        <label for="input_submit">
+            Input Submit
+            <input id="input_submit" type="submit"/><br>
+        </label>
+        <label for="input_tel">
+            Input Tel
+            <input id="input_tel" type="tel"/><br>
+        </label>
+        <label for="input_txt">
+            Input Text
+            <input id="input_txt" type="text"/><br>
+        </label>
+        <label for="input_time">
+            Input Time
+            <input id="input_time" type="time"/><br>
+        </label>
+        <label for="input_url">
+            Input URL
+            <input id="input_url" type="url"/><br>
+        </label>
+        <label for="input_week">
+            Input Week
+            <input id="input_week" type="week"/><br>
+        </label>
+    </section>
+
+    <section>
+        <h3>Details</h3>
+        <details>
+            <summary>PHP is a server side scripting language</summary>
+            <p>PHP is a general-purpose server-side scripting language originally designed for web development to produce dynamic web
+                pages. For this purpose, PHP code is embedded into the HTML source document and interpreted by a web server with a PHP
+                processor module, which generates the web page document.</p>
+        </details>
+
+        <details open>
+            <summary>PHP is a server side scripting language</summary>
+            <p>PHP is a general-purpose server-side scripting language originally designed for web development to produce dynamic web
+                pages. For this purpose, PHP code is embedded into the HTML source document and interpreted by a web server with a PHP
+                processor module, which generates the web page document.</p>
+        </details>
+        <p><strong> Note:</strong>The open attribute is a boolean attribute.</p>
+    </section>
+
+    <section>
+        <h3>Forms</h3>
+        <form>
+            <fieldset>
+                Name: <input type="text" size="30" /><br /><br />
+                Email: <input type="text" size="30" /><br /><br />
+                Place: <input type="text" size="10" /><br /><br />
+            </fieldset>
+        </form>
+        <p>Disabled</p>
+        <form>
+            <fieldset disabled>
+                Name: <input type="text" size="30" /><br /><br />
+                Email: <input type="text" size="30" /><br /><br />
+                Place: <input type="text" size="10" /><br /><br />
+            </fieldset>
+        </form>
+        <p>Specify fieldset to form</p>
+        <form action="#" method="post" id="w3r_form">
+            What is your favorite game? <input type="text" name="game"><br>
+            <input type="submit">
+        </form>
+        <fieldset form="w3r_form">
+            <legend>Personal Info:</legend>
+            Name: <input type="text" name="name" /><br /><br />
+            Email: <input type="text" name="email" /><br /><br />
+            Place: <input type="text" name="place"/><br /><br />
+        </fieldset>
+    </section>
+
+    <section>
+        <h3>Images / Figures</h3>
+        <figure>
+            <img src="https://www.w3resource.com/images/w3logo6.png" alt="w3resource Logo"
+                 width="149" height="52" />
+
+            <figcaption>Official Logo of w3resource.com</figcaption>
+        </figure>
+    </section>
+</body>
+</html>
