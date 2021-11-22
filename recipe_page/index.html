@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Volkorenlasagne met spinazie en linzen</title>
+</head>
+<!--
+    add styling to content
+    three ways:
+    - inline css
+        (NOT RECOMMENDED)
+        on an excisting tag use:
+        style="color:blue;width:800px;text-align:center;"
+    - internal css
+        (used in this file)
+        write your css inside <style> tags
+    - external css (RECOMMENDED)
+        ADD in <head> tag
+        <link rel="stylesheet" href="link/to/name.css">
+-->
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background: black;
+        color: white;
+        width: 800px;
+    }
+    header {
+        text-align: center;
+    }
+    header img {
+        width: 100%;
+    }
+
+    main {
+        margin-left: 50px;
+    }
+    main ul, main ol {
+        margin-left: 20px;
+    }
+    main ul li strong:before {
+        content: "[ ";
+    }
+    main ul li strong:after {
+        content: " ]";
+    }
+    main h3 {
+        padding: 10px 10px;
+    }
+</style>
+
+
+<body>
+    <!--
+        header containing:
+        - title of content
+        - subtitle
+        - image regarding content
+    -->
+    <header>
+        <h1>Volkorenlasagne</h1>
+        <h2>met spinazie en linzen</h2>
+        <img
+                src="https://cdn.pixabay.com/photo/2021/02/04/12/48/food-5981242_960_720.jpg"
+                alt=" picture by @romjanaly pixabay.com">
+        </img>
+    </header>
+
+    <!--
+        Main content containing:
+        a. ingredients
+            - listed in an unordered list
+        b. how to prepare
+    -->
+    <main>
+        <h3>Ingredients:</h3>
+        <ul>
+            <li>1 middelgrote <strong>ui</strong></li>
+            <li>2 tenen <strong>knoflook</strong></li>
+            <li>400 gram <strong>champignons</strong></li>
+            <li>2 el milde <strong>olijfolie</strong></li>
+            <li>750 gram fijngesneden <strong>spinazie</strong></li>
+            <li>1 bos verse <strong>italiaanse kruiden</strong></li>
+            <li>200 gram <strong>zuivelspread*</strong></li>
+            <li>300 gram <strong>linzen</strong> (blik)</li>
+            <li>12 volkoren <strong>lasagne bladen</strong></li>
+            <li>150 gram geraspte <strong>kaas</strong>*</li>
+        </ul>
+        <sub>* vervang met vegan alternatieve voor van deze vegetarische variant een veganistische variant te maken</sub>
+        <hr>
+        <h3>Bereiding:</h3>
+        <ol>
+            <li>Verwarm de oven voor op 180 graden Celcius</li>
+            <li>Snij de ingredienten:
+                <ul>
+                    <li>Snipper de ui</li>
+                    <li>Snij de knoflook fijn</li>
+                    <li>Snij de champinons in plakjes van een halve centimeter dik</li>
+                    <li>Snij het bosje italiaanse kruiden fijn</li>
+                </ul>
+            </li>
+            <li>Verhit de olie in een medium pan</li>
+            <li>Bak de ui en champignons voor +/- 3 minuten op hoog vuur</li>
+            <li>Voeg de knoflook en spinazie</li>
+            <li>Verhit het geheel voor +/- 7 minuten op medium vuur, roer het geheel regelmatig door</li>
+            <li>Voeg de zuivelspread en verse kruiden toe en verwarm kort mee</li>
+            <li>Breng op smaak met peper en zout</li>
+            <li>Spoel de linzen af onder koud stromend water</li>
+            <li>Voeg toe aan de pan</li>
+            <li>Vul de ovenschaal met de lasagne
+                <ul>
+                    <li>Een laag van 2 grote lepels saus</li>
+                    <li>Een laag lasagne bladeren</li>
+                </ul>
+                <sub>Herhaal deze stappen tot de ovenschaal vol is</sub>
+            </li>
+            <li>Plaats de lasagna in de oven</li>
+            <li>Bestrooi de ovenschaal met kaas na de eerste 25 minuten</li>
+            <li>Bak hierna de lasagna gaar in 15 minuten</li>
+        </ol>
+
+        <a href="./voedingswaarden.html">open de voedingswaarden</a>
+    </main>
+
+    <!--
+        footer containing:
+        - contact form
+    -->
+    <footer>
+        <form
+            action="upload.php"
+            method="post"
+            enctype="multipart/form-data"
+        >
+            <h3>Show me Yours</h3>
+            <label for="imageToUpload">
+                <input
+                    type="file"
+                    name="image"
+                    id="imageToUpload"
+                >
+            </label>
+            <label for="message">
+                <input
+                    type="text"
+                    name="message"
+                    id="message"
+                />
+            </label>
+            <input
+                type="submit"
+                value="I show you mine"
+                name="submit-contact-form"
+            />
+        </form>
+    </footer>
+</body>
+</html>
