@@ -1,0 +1,20 @@
+body {
+    background: black;
+    color: white;
+}
+
+h1 {
+    color: orange;
+}
+
+.success {
+    color: greenyellow;
+}
+
+.warning {
+    color: red;
+}
+
+.blue {
+    color: lightblue;
+}

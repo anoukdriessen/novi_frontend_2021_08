@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech It Easy Dashboard</title>
+    <!--
+        koppel CSS & JS
+    -->
+    <link rel="stylesheet" href="./styles.css">
+    <script src="main.js"></script>
+</head>
+<body id="root">
+    <h1>Tech it Easy</h1>
+    <script>
+        const root = document.getElementById("root");
+
+        /**
+         * opdracht 2
+         */
+
+        // verkochte tv's
+        const sold = document.createElement("p");
+        sold.className = "success";
+        const numberSold = document.createTextNode("er zijn [" + getNumberOfSoldTVs(inventory) + "] tv's verkocht");
+        sold.appendChild(numberSold);
+
+        // gekochte tv's
+        const bought = document.createElement("p");
+        bought.className = "blue";
+        const numberBought = document.createTextNode("er zijn [" + getNumberOfBoughtTVs(inventory) + "] tv's gekocht");
+        bought.appendChild(numberBought);
+
+        // tv's die nog verkocht moeten worden
+        const sum = document.createElement("p");
+        sum.className = "warning";
+        const stillToSell = document.createTextNode("er moeten nog [" + (getNumberOfBoughtTVs(inventory) - getNumberOfSoldTVs(inventory)) + "] tv's verkocht worden");
+        sum.appendChild(stillToSell);
+
+        // toon op pagina
+        root.appendChild(sold);
+        root.appendChild(bought);
+        root.appendChild(sum);
+    </script>
+
+    <script>
+        /**
+         * opdracht 3
+         */
+        const brands = document.createElement("p");
+        const brandNames = document.createTextNode(getAllBrands(inventory));
+        brands.appendChild(brandNames);
+
+        // toon op pagina
+        root.appendChild(brands);
+    </script>
+
+</body>
+</html>
